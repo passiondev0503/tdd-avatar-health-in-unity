@@ -5,7 +5,6 @@ public class HealthTest
 {
 	public class Constructor
 	{
-
 		[TestCase(12)]
 		[TestCase(1)]
 		public void CurrentPointsHasStartingValue(int startingPoints)
@@ -16,12 +15,35 @@ public class HealthTest
 
 		[TestCase(0)]
 		[TestCase(-1)]
-		public void ThrowsError_WhenStartingValueIsInvalid(int startingPoints)
+		public void ThrowsError_WhenStartingPointsIsInvalid(int startingPoints)
 		{
 			Assert.Throws(Is.TypeOf<ArgumentOutOfRangeException>(),
 			delegate
 			{
 				new Health(startingPoints);
+			});
+		}
+	}
+
+	public class TakeDamage
+	{
+		[Test]
+		public void CurrentPointsDecrease()
+		{
+			var health = new Health(12);
+			health.TakeDamage(1);
+			Assert.That(health.CurrentPoints, Is.EqualTo(11));
+		}
+
+		[TestCase(0)]
+		[TestCase(-1)]
+		public void ThrowsError_WhenDamagePointsIsInvalid(int damagePoints)
+		{
+			var health = new Health(12);
+			Assert.Throws(Is.TypeOf<ArgumentOutOfRangeException>(),
+			delegate
+			{
+				health.TakeDamage(damagePoints);
 			});
 		}
 	}

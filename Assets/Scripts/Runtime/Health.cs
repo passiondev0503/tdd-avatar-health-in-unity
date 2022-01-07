@@ -6,13 +6,22 @@ public class Health
 
 	public Health(int startingPoints)
 	{
-		int lowestValidValue = 1;
-		if (startingPoints < lowestValidValue)
+		ValidatePoints(startingPoints, 1, nameof(startingPoints));
+		CurrentPoints = startingPoints;
+	}
+
+	public void TakeDamage(int damagePoints)
+	{
+		ValidatePoints(damagePoints, 1, nameof(damagePoints));
+		CurrentPoints -= damagePoints;
+	}
+
+	private void ValidatePoints(int points, int lowestValidValue, string paramName)
+	{
+		if (points < lowestValidValue)
 		{
-			var paramName = nameof(startingPoints);
-			var message = $"Value '{startingPoints}' is invalid, it should be equal or higher than '{lowestValidValue}'";
+			var message = $"Value '{points}' is invalid, it should be equal or higher than '{lowestValidValue}'";
 			throw new ArgumentOutOfRangeException(paramName, message);
 		}
-		CurrentPoints = startingPoints;
 	}
 }
