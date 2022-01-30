@@ -3,6 +3,7 @@ using System;
 public class Health
 {
 	public int CurrentPoints { get; private set; }
+	public bool IsDead => false;
 
 	public Health(int startingPoints)
 	{

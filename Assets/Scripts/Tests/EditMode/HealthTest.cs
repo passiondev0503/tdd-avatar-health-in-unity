@@ -47,4 +47,14 @@ public class HealthTest
 			});
 		}
 	}
+
+	public class IsDead
+	{
+		[Test]
+		public void IsFalse_AtStart()
+		{
+			var health = new Health(12);
+			Assert.That(health.IsDead, Is.False);
+		}
+	}
 }
