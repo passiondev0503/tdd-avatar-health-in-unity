@@ -3,12 +3,13 @@ using System;
 public class Health
 {
 	public int CurrentPoints { get; private set; }
-	public bool IsDead => false;
+	public int FullPoints { get; private set; }
+	public bool IsDead => CurrentPoints < 1;
 
 	public Health(int startingPoints)
 	{
 		ValidatePoints(startingPoints, 1, nameof(startingPoints));
-		CurrentPoints = startingPoints;
+		FullPoints = CurrentPoints = startingPoints;
 	}
 
 	public void TakeDamage(int damagePoints)
