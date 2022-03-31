@@ -2,6 +2,7 @@ using System;
 
 public class Health
 {
+	public const uint MaxNegativePointsForInstantKillProtection = 20;
 	public int CurrentPoints { get; private set; }
 	public int FullPoints { get; private set; }
 	public bool IsDead => CurrentPoints < 1;
@@ -15,6 +16,15 @@ public class Health
 	public void TakeDamage(int damagePoints)
 	{
 		ValidatePoints(damagePoints, 1, nameof(damagePoints));
+
+		if (CurrentPoints == FullPoints
+			&& damagePoints >= FullPoints
+			&& damagePoints <= FullPoints + MaxNegativePointsForInstantKillProtection)
+		{
+			CurrentPoints = 1;
+			return;
+		}
+
 		CurrentPoints -= damagePoints;
 	}
 
