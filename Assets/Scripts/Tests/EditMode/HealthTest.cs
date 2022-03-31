@@ -54,7 +54,10 @@ public class HealthTest
 		[TestCase(1, 2, 3)]
 		[TestCase(1, 2, 22)]
 		[TestCase(-21, 2, 23)]
-		public void CurrentPoints_WhenStartingPoints_andDamagePoints(int currentPoints, int startingPoints, int damagePoints)
+		public void CurrentPoints_WhenStartingPoints_andDamagePoints(
+			int currentPoints,
+			int startingPoints,
+			int damagePoints)
 		{
 			var health = new Health(startingPoints);
 			health.TakeDamage(damagePoints);
@@ -74,7 +77,7 @@ public class HealthTest
 		}
 
 		[Test]
-		public void IsDead_InTwoTakeDamageCalls()
+		public void IsDead_AfterTwoInvocations()
 		{
 			var health = new Health(10);
 			health.TakeDamage(9);
