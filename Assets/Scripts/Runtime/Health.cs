@@ -2,26 +2,36 @@ using System;
 
 public class Health
 {
-	public const int MaxNegativePointsForInstantKillProtection = -20;
-	public const int PointsPerUnit = 4;
-	public const int MaxFullPoints = 120;
-
+	public int PointsPerUnit
+	{
+		get { return config.PointsPerUnit; }
+	}
+	public int MaxUnits
+	{
+		get { return config.MaxUnits; }
+	}
+		public int MaxNegativePointsForInstantKillProtection
+	{
+		get { return config.MaxNegativePointsForInstantKillProtection; }
+	}
 	public int CurrentPoints { get; private set; }
 	public int FullPoints { get; private set; }
-	public bool IsMaxFullPointsReached => FullPoints == MaxFullPoints;
+	public bool IsMaxUnitsReached => FullPoints / PointsPerUnit == MaxUnits;
 	public bool IsDead => CurrentPoints < 1;
+	
+	private GameConfig config;
 
-	public Health(int startingPoints)
+	public Health(GameConfig gameConfig)
 	{
-		ValidatePoints(startingPoints, 1);
-		FullPoints = CurrentPoints = startingPoints;
+		config = gameConfig;
+		FullPoints = CurrentPoints = config.StartingPoints;
 	}
 
 	public void IncreaseByUnit()
 	{
-		if (IsMaxFullPointsReached)
+		if (IsMaxUnitsReached)
 		{
-			var message = $"Method invocation is invalid as {nameof(IsMaxFullPointsReached)} is true";
+			var message = $"Method invocation is invalid as {nameof(IsMaxUnitsReached)} is true";
 			throw new InvalidOperationException(message);
 		}
 
@@ -52,10 +62,10 @@ public class Health
 
 	private static void ValidatePoints(int points, int lowestValidValue)
 	{
-		if (points < lowestValidValue)
+		(bool IsValid, int Value, string FailMessage) v = Validation.Validate(points, lowestValidValue);
+		if (!v.IsValid)
 		{
-			var message = $"Value {points} is invalid, it should be equal or higher than {lowestValidValue}";
-			throw new ArgumentOutOfRangeException(nameof(points), message);
+			throw new ArgumentOutOfRangeException(nameof(points), v.FailMessage);
 		}
 	}
 }
