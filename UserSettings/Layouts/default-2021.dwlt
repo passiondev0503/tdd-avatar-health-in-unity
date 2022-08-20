@@ -8,6 +8,54 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 250
+    y: 127
+    width: 951
+    height: 773
+  m_ShowMode: 0
+  m_Title: Project Settings
+  m_RootView: {fileID: 5}
+  m_MinSize: {x: 310, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_Maximized: 0
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 397
+    y: 87
+    width: 641
+    height: 603
+  m_ShowMode: 0
+  m_Title: Build Settings
+  m_RootView: {fileID: 7}
+  m_MinSize: {x: 640, y: 601}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_Maximized: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -19,64 +67,11 @@ MonoBehaviour:
     width: 1440
     height: 847
   m_ShowMode: 4
-  m_Title: Package Manager
-  m_RootView: {fileID: 6}
+  m_Title: Inspector
+  m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 9}
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 1440
-    height: 797
-  m_MinSize: {x: 300, y: 200}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 0
-  controlID: 49
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: PackageManagerWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 731.5
-    y: 0
-    width: 708.5
-    height: 797
-  m_MinSize: {x: 801, y: 271}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 12}
-  m_Panes:
-  - {fileID: 13}
-  - {fileID: 12}
-  - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,19 +80,19 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: ProjectSettingsWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 181.5
-    height: 472
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 951
+    height: 773
+  m_MinSize: {x: 310, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -111,26 +106,73 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 951
+    height: 773
+  m_MinSize: {x: 310, y: 221}
+  m_MaxSize: {x: 4000, y: 4021}
+  vertical: 0
+  controlID: 3422
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: BuildPlayerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 472
-    width: 731.5
-    height: 325
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+    y: 0
+    width: 641
+    height: 603
+  m_MinSize: {x: 640, y: 601}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 19}
-  m_Selected: 1
+  - {fileID: 17}
+  m_Selected: 0
   m_LastSelected: 0
---- !u!114 &6
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 641
+    height: 603
+  m_MinSize: {x: 640, y: 601}
+  m_MaxSize: {x: 4000, y: 4021}
+  vertical: 0
+  controlID: 3363
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,9 +185,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 2}
-  - {fileID: 8}
+  - {fileID: 9}
+  - {fileID: 11}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -158,7 +200,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &7
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &8
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,56 +243,6 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &9
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 10}
-  - {fileID: 5}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 731.5
-    height: 797
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 50
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 4}
-  - {fileID: 11}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 731.5
-    height: 472
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 51
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,24 +252,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
+  m_Children:
+  - {fileID: 12}
+  - {fileID: 15}
   m_Position:
     serializedVersion: 2
-    x: 181.5
-    y: 0
-    width: 550
-    height: 472
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+    x: 0
+    y: 30
+    width: 1440
+    height: 797
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 0
+  controlID: 6964
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -286,26 +276,23 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13953, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 800, y: 250}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Package Manager
-    m_Image: {fileID: 5076950121296946556, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
+  m_Children:
+  - {fileID: 13}
+  - {fileID: 14}
+  m_Position:
     serializedVersion: 2
-    x: 731.5
-    y: 83
-    width: 707.5
-    height: 776
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
+    x: 0
+    y: 0
+    width: 658
+    height: 797
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 6965
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -314,821 +301,224 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 658
+    height: 308
+  m_MinSize: {x: 276, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 308
+    width: 658
+    height: 489
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 658
+    y: 0
+    width: 782
+    height: 797
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 21}
+  - {fileID: 19}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 13854, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 310, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Test Runner
-    m_Image: {fileID: 0}
+    m_Text: Project Settings
+    m_Image: {fileID: 866346219090771560, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 732.5
-    y: 19
-    width: 707.5
-    height: 776
+    x: 250
+    y: 127
+    width: 951
+    height: 752
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  m_Spl:
-    ID: 575
-    splitterInitialOffset: 0
-    currentActiveSplitter: -1
-    realSizes:
-    - 330
-    - 110
-    relativeSizes:
-    - 0.75
-    - 0.25
-    minSizes:
-    - 32
-    - 32
-    maxSizes:
-    - 0
-    - 0
-    lastTotalSize: 440
-    splitSize: 6
-    xOffset: 0
-    m_Version: 1
-    oldRealSizes: 
-    oldMinSizes: 
-    oldMaxSizes: 
-    oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
-  m_PlayModeTestListGUI:
-    m_Window: {fileID: 0}
-    m_NewResultList: []
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories: []
-    m_SelectedOption: 0
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 13}
-    m_NewResultList:
-    - id: 1000
-      uniqueId: '[TDD Avatar Health][suite]'
-      name: TDD Avatar Health
-      fullName: TDD Avatar Health
-      resultStatus: 1
-      duration: 0.1506308
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    - id: 1041
-      uniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
-      name: EditMode.dll
-      fullName: /Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll
-      resultStatus: 1
-      duration: 0.1263654
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1000
-      parentUniqueId: '[TDD Avatar Health][suite]'
-    - id: 1001
-      uniqueId: EditMode.dll/[EditMode][HealthTest][suite]
-      name: HealthTest
-      fullName: HealthTest
-      resultStatus: 1
-      duration: 0.0010636
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1041
-      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1002
-      uniqueId: EditMode.dll/[EditMode][HealthTest+Constructor][suite]
-      name: HealthTest+Constructor
-      fullName: HealthTest+Constructor
-      resultStatus: 1
-      duration: 0.078058
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1041
-      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1005
-      uniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.CurrentPoints_HasStartingValue][suite]
-      name: CurrentPoints_HasStartingValue
-      fullName: HealthTest+Constructor.CurrentPoints_HasStartingValue
-      resultStatus: 1
-      duration: 0.0213214
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1002
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Constructor][suite]
-    - id: 1003
-      uniqueId: EditMode.dll/HealthTest+Constructor/CurrentPoints_HasStartingValue/[EditMode][HealthTest+Constructor.CurrentPoints_HasStartingValue(12)]
-      name: CurrentPoints_HasStartingValue(12)
-      fullName: HealthTest+Constructor.CurrentPoints_HasStartingValue(12)
-      resultStatus: 1
-      duration: 0.0184487
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.CurrentPoints_HasStartingValue][suite]
-    - id: 1004
-      uniqueId: EditMode.dll/HealthTest+Constructor/CurrentPoints_HasStartingValue/[EditMode][HealthTest+Constructor.CurrentPoints_HasStartingValue(1)]
-      name: CurrentPoints_HasStartingValue(1)
-      fullName: HealthTest+Constructor.CurrentPoints_HasStartingValue(1)
-      resultStatus: 1
-      duration: 0.00018
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.CurrentPoints_HasStartingValue][suite]
-    - id: 1008
-      uniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.FullPoints_HasStartingValue][suite]
-      name: FullPoints_HasStartingValue
-      fullName: HealthTest+Constructor.FullPoints_HasStartingValue
-      resultStatus: 1
-      duration: 0.0316105
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1002
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Constructor][suite]
-    - id: 1006
-      uniqueId: EditMode.dll/HealthTest+Constructor/FullPoints_HasStartingValue/[EditMode][HealthTest+Constructor.FullPoints_HasStartingValue(12)]
-      name: FullPoints_HasStartingValue(12)
-      fullName: HealthTest+Constructor.FullPoints_HasStartingValue(12)
-      resultStatus: 1
-      duration: 0.0003487
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1008
-      parentUniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.FullPoints_HasStartingValue][suite]
-    - id: 1007
-      uniqueId: EditMode.dll/HealthTest+Constructor/FullPoints_HasStartingValue/[EditMode][HealthTest+Constructor.FullPoints_HasStartingValue(1)]
-      name: FullPoints_HasStartingValue(1)
-      fullName: HealthTest+Constructor.FullPoints_HasStartingValue(1)
-      resultStatus: 1
-      duration: 0.0000879
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1008
-      parentUniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.FullPoints_HasStartingValue][suite]
-    - id: 1012
-      uniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.IsDead_IsFalse]
-      name: IsDead_IsFalse
-      fullName: HealthTest+Constructor.IsDead_IsFalse
-      resultStatus: 1
-      duration: 0.0005468
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1002
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Constructor][suite]
-    - id: 1011
-      uniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.ThrowsError_WhenStartingPointsIsInvalid][suite]
-      name: ThrowsError_WhenStartingPointsIsInvalid
-      fullName: HealthTest+Constructor.ThrowsError_WhenStartingPointsIsInvalid
-      resultStatus: 1
-      duration: 0.0113501
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1002
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Constructor][suite]
-    - id: 1009
-      uniqueId: EditMode.dll/HealthTest+Constructor/ThrowsError_WhenStartingPointsIsInvalid/[EditMode][HealthTest+Constructor.ThrowsError_WhenStartingPointsIsInvalid(0)]
-      name: ThrowsError_WhenStartingPointsIsInvalid(0)
-      fullName: HealthTest+Constructor.ThrowsError_WhenStartingPointsIsInvalid(0)
-      resultStatus: 1
-      duration: 0.0050001
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1011
-      parentUniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.ThrowsError_WhenStartingPointsIsInvalid][suite]
-    - id: 1010
-      uniqueId: EditMode.dll/HealthTest+Constructor/ThrowsError_WhenStartingPointsIsInvalid/[EditMode][HealthTest+Constructor.ThrowsError_WhenStartingPointsIsInvalid(-1)]
-      name: ThrowsError_WhenStartingPointsIsInvalid(-1)
-      fullName: HealthTest+Constructor.ThrowsError_WhenStartingPointsIsInvalid(-1)
-      resultStatus: 1
-      duration: 0.0013483
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1011
-      parentUniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.ThrowsError_WhenStartingPointsIsInvalid][suite]
-    - id: 1030
-      uniqueId: EditMode.dll/[EditMode][HealthTest+IncreaseByUnit][suite]
-      name: HealthTest+IncreaseByUnit
-      fullName: HealthTest+IncreaseByUnit
-      resultStatus: 1
-      duration: 0.0120283
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1041
-      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1032
-      uniqueId: EditMode.dll/HealthTest+IncreaseByUnit/[EditMode][HealthTest+IncreaseByUnit.CurrentPoints_Increase]
-      name: CurrentPoints_Increase
-      fullName: HealthTest+IncreaseByUnit.CurrentPoints_Increase
-      resultStatus: 1
-      duration: 0.000453
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1030
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IncreaseByUnit][suite]
-    - id: 1036
-      uniqueId: EditMode.dll/HealthTest+IncreaseByUnit/[EditMode][HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints][suite]
-      name: CurrentPoints_WhenStartingPoints_ThenDamagePoints
-      fullName: HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints
-      resultStatus: 1
-      duration: 0.0045943
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1030
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IncreaseByUnit][suite]
-    - id: 1033
-      uniqueId: EditMode.dll/HealthTest+IncreaseByUnit/CurrentPoints_WhenStartingPoints_ThenDamagePoints/[EditMode][HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints(7,4,1)]
-      name: CurrentPoints_WhenStartingPoints_ThenDamagePoints(7,4,1)
-      fullName: HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints(7,4,1)
-      resultStatus: 1
-      duration: 0.0004882
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1036
-      parentUniqueId: EditMode.dll/HealthTest+IncreaseByUnit/[EditMode][HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints][suite]
-    - id: 1034
-      uniqueId: EditMode.dll/HealthTest+IncreaseByUnit/CurrentPoints_WhenStartingPoints_ThenDamagePoints/[EditMode][HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints(6,4,2)]
-      name: CurrentPoints_WhenStartingPoints_ThenDamagePoints(6,4,2)
-      fullName: HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints(6,4,2)
-      resultStatus: 1
-      duration: 0.0001144
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1036
-      parentUniqueId: EditMode.dll/HealthTest+IncreaseByUnit/[EditMode][HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints][suite]
-    - id: 1035
-      uniqueId: EditMode.dll/HealthTest+IncreaseByUnit/CurrentPoints_WhenStartingPoints_ThenDamagePoints/[EditMode][HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints(5,4,3)]
-      name: CurrentPoints_WhenStartingPoints_ThenDamagePoints(5,4,3)
-      fullName: HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints(5,4,3)
-      resultStatus: 1
-      duration: 0.0000836
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1036
-      parentUniqueId: EditMode.dll/HealthTest+IncreaseByUnit/[EditMode][HealthTest+IncreaseByUnit.CurrentPoints_WhenStartingPoints_ThenDamagePoints][suite]
-    - id: 1031
-      uniqueId: EditMode.dll/HealthTest+IncreaseByUnit/[EditMode][HealthTest+IncreaseByUnit.FullPoints_Increase]
-      name: FullPoints_Increase
-      fullName: HealthTest+IncreaseByUnit.FullPoints_Increase
-      resultStatus: 1
-      duration: 0.0002574
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1030
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IncreaseByUnit][suite]
-    - id: 1037
-      uniqueId: EditMode.dll/HealthTest+IncreaseByUnit/[EditMode][HealthTest+IncreaseByUnit.ThrowsError_WhenMaxFullPointsReached]
-      name: ThrowsError_WhenMaxFullPointsReached
-      fullName: HealthTest+IncreaseByUnit.ThrowsError_WhenMaxFullPointsReached
-      resultStatus: 1
-      duration: 0.0005575
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1030
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IncreaseByUnit][suite]
-    - id: 1038
-      uniqueId: EditMode.dll/[EditMode][HealthTest+IsMaxFullPointsReached][suite]
-      name: HealthTest+IsMaxFullPointsReached
-      fullName: HealthTest+IsMaxFullPointsReached
-      resultStatus: 1
-      duration: 0.0050383
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1041
-      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1039
-      uniqueId: EditMode.dll/HealthTest+IsMaxFullPointsReached/[EditMode][HealthTest+IsMaxFullPointsReached.ReturnsFalse]
-      name: ReturnsFalse
-      fullName: HealthTest+IsMaxFullPointsReached.ReturnsFalse
-      resultStatus: 1
-      duration: 0.0005281
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1038
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IsMaxFullPointsReached][suite]
-    - id: 1040
-      uniqueId: EditMode.dll/HealthTest+IsMaxFullPointsReached/[EditMode][HealthTest+IsMaxFullPointsReached.ReturnsTrue]
-      name: ReturnsTrue
-      fullName: HealthTest+IsMaxFullPointsReached.ReturnsTrue
-      resultStatus: 1
-      duration: 0.0003586
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1038
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IsMaxFullPointsReached][suite]
-    - id: 1024
-      uniqueId: EditMode.dll/[EditMode][HealthTest+Replenish][suite]
-      name: HealthTest+Replenish
-      fullName: HealthTest+Replenish
-      resultStatus: 1
-      duration: 0.0091676
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1041
-      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1025
-      uniqueId: EditMode.dll/HealthTest+Replenish/[EditMode][HealthTest+Replenish.CurrentPoints_WhenFullHealth]
-      name: CurrentPoints_WhenFullHealth
-      fullName: HealthTest+Replenish.CurrentPoints_WhenFullHealth
-      resultStatus: 1
-      duration: 0.0003372
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1024
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Replenish][suite]
-    - id: 1026
-      uniqueId: EditMode.dll/HealthTest+Replenish/[EditMode][HealthTest+Replenish.CurrentPoints_WhenNotFullHealth]
-      name: CurrentPoints_WhenNotFullHealth
-      fullName: HealthTest+Replenish.CurrentPoints_WhenNotFullHealth
-      resultStatus: 1
-      duration: 0.0002299
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1024
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Replenish][suite]
-    - id: 1029
-      uniqueId: EditMode.dll/HealthTest+Replenish/[EditMode][HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid][suite]
-      name: ThrowsError_WhenReplenishPointsIsInvalid
-      fullName: HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid
-      resultStatus: 1
-      duration: 0.0043541
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1024
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Replenish][suite]
-    - id: 1027
-      uniqueId: EditMode.dll/HealthTest+Replenish/ThrowsError_WhenReplenishPointsIsInvalid/[EditMode][HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid(0)]
-      name: ThrowsError_WhenReplenishPointsIsInvalid(0)
-      fullName: HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid(0)
-      resultStatus: 1
-      duration: 0.0004343
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1029
-      parentUniqueId: EditMode.dll/HealthTest+Replenish/[EditMode][HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid][suite]
-    - id: 1028
-      uniqueId: EditMode.dll/HealthTest+Replenish/ThrowsError_WhenReplenishPointsIsInvalid/[EditMode][HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid(-1)]
-      name: ThrowsError_WhenReplenishPointsIsInvalid(-1)
-      fullName: HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid(-1)
-      resultStatus: 1
-      duration: 0.0003264
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1029
-      parentUniqueId: EditMode.dll/HealthTest+Replenish/[EditMode][HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid][suite]
-    - id: 1013
-      uniqueId: EditMode.dll/[EditMode][HealthTest+TakeDamage][suite]
-      name: HealthTest+TakeDamage
-      fullName: HealthTest+TakeDamage
-      resultStatus: 1
-      duration: 0.0149834
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1041
-      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1014
-      uniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_Decrease]
-      name: CurrentPoints_Decrease
-      fullName: HealthTest+TakeDamage.CurrentPoints_Decrease
-      resultStatus: 1
-      duration: 0.0002561
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1013
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+TakeDamage][suite]
-    - id: 1019
-      uniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints][suite]
-      name: CurrentPoints_WhenStartingPoints_ThenDamagePoints
-      fullName: HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints
-      resultStatus: 1
-      duration: 0.0045729
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1013
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+TakeDamage][suite]
-    - id: 1015
-      uniqueId: EditMode.dll/HealthTest+TakeDamage/CurrentPoints_WhenStartingPoints_ThenDamagePoints/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints(1,2,2)]
-      name: CurrentPoints_WhenStartingPoints_ThenDamagePoints(1,2,2)
-      fullName: HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints(1,2,2)
-      resultStatus: 1
-      duration: 0.0003551
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1019
-      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints][suite]
-    - id: 1016
-      uniqueId: EditMode.dll/HealthTest+TakeDamage/CurrentPoints_WhenStartingPoints_ThenDamagePoints/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints(1,2,3)]
-      name: CurrentPoints_WhenStartingPoints_ThenDamagePoints(1,2,3)
-      fullName: HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints(1,2,3)
-      resultStatus: 1
-      duration: 0.0000971
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1019
-      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints][suite]
-    - id: 1017
-      uniqueId: EditMode.dll/HealthTest+TakeDamage/CurrentPoints_WhenStartingPoints_ThenDamagePoints/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints(1,2,22)]
-      name: CurrentPoints_WhenStartingPoints_ThenDamagePoints(1,2,22)
-      fullName: HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints(1,2,22)
-      resultStatus: 1
-      duration: 0.0000856
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1019
-      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints][suite]
-    - id: 1018
-      uniqueId: EditMode.dll/HealthTest+TakeDamage/CurrentPoints_WhenStartingPoints_ThenDamagePoints/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints(-21,2,23)]
-      name: CurrentPoints_WhenStartingPoints_ThenDamagePoints(-21,2,23)
-      fullName: HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints(-21,2,23)
-      resultStatus: 1
-      duration: 0.0000875
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1019
-      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingPoints_ThenDamagePoints][suite]
-    - id: 1023
-      uniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.IsDead_AfterTwoInvocations]
-      name: IsDead_AfterTwoInvocations
-      fullName: HealthTest+TakeDamage.IsDead_AfterTwoInvocations
-      resultStatus: 1
-      duration: 0.0002467
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1013
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+TakeDamage][suite]
-    - id: 1022
-      uniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid][suite]
-      name: ThrowsError_WhenDamagePointsIsInvalid
-      fullName: HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid
-      resultStatus: 1
-      duration: 0.0043569
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1013
-      parentUniqueId: EditMode.dll/[EditMode][HealthTest+TakeDamage][suite]
-    - id: 1020
-      uniqueId: EditMode.dll/HealthTest+TakeDamage/ThrowsError_WhenDamagePointsIsInvalid/[EditMode][HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid(0)]
-      name: ThrowsError_WhenDamagePointsIsInvalid(0)
-      fullName: HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid(0)
-      resultStatus: 1
-      duration: 0.0004157
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid][suite]
-    - id: 1021
-      uniqueId: EditMode.dll/HealthTest+TakeDamage/ThrowsError_WhenDamagePointsIsInvalid/[EditMode][HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid(-1)]
-      name: ThrowsError_WhenDamagePointsIsInvalid(-1)
-      fullName: HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid(-1)
-      resultStatus: 1
-      duration: 0.000133
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid][suite]
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 3e259c8396fab88d0c3cf990b4147eb7f46d3ebf493daaca3e99c2cd61d52edb686deee1eaa5490b6f343d1b4047f02b080b363f00ffb37dffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
---- !u!114 &14
+  m_PosLeft: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 0}
+  m_Scope: 1
+  m_SplitterFlex: 0.2
+  m_SearchText: 
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 4dcf9b58
+    m_LastClickedID: 1486606157
+    m_ExpandedIDs: a01a5fa600000000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12043, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 640, y: 580}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Build Settings
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 397
+    y: 87
+    width: 641
+    height: 582
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 83
+    width: 657
+    height: 287
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: -1
+    m_ControlHash: 1412526313
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1148,10 +538,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 555
-    width: 957.5
-    height: 304
+    x: 658
+    y: 83
+    width: 781
+    height: 776
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1169,22 +559,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Tests/EditMode
+    - Assets/Scripts/Runtime/ScriptableObjects
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Tests/EditMode
+  - Assets/Scripts/Runtime/ScriptableObjects
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/admin/code/tdd-avatar-health-in-unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e630000
-    m_LastClickedID: 25390
-    m_ExpandedIDs: 000000000e630000126300002c63000000ca9a3bffffff7f
+    m_SelectedIDs: ba4c0000
+    m_LastClickedID: 19642
+    m_ExpandedIDs: 00000000064c0000964c0000ae4c0000b04c0000b24c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1200,7 +590,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 14}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1210,9 +600,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_SelectedIDs: ffffff7f
+    m_LastClickedID: 2147483647
+    m_ExpandedIDs: ffffffff00000000064c0000964c0000ae4c0000b04c0000b24c0000ba4c0000d24c00002a4d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1267,503 +657,8 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 207
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 922
-    y: 19
-    width: 284
-    height: 644
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_PreviewResizer:
-    m_CachedPref: 160
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
-  m_GlobalObjectId: 
-  m_InspectorMode: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewWindow: {fileID: 0}
---- !u!114 &16
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Hierarchy
-    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 83
-    width: 180.5
-    height: 451
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_SceneHierarchy:
-    m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9eddffff
-      m_LastClickedID: 0
-      m_ExpandedIDs: 74e0ffff34e1ffffdce2ffff
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_ExpandedScenes: []
-    m_CurrenRootInstanceID: 0
-    m_LockTracker:
-      m_IsLocked: 0
-    m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &17
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Scene
-    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 181.5
-    y: 83
-    width: 548
-    height: 451
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData:
-    - dockPosition: 0
-      containerId: overlay-toolbar__top
-      floating: 0
-      collapsed: 0
-      displayed: 1
-      snapOffset: {x: -101, y: -26}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
-      id: Tool Settings
-      index: 0
-      layout: 1
-    - dockPosition: 0
-      containerId: overlay-toolbar__top
-      floating: 0
-      collapsed: 0
-      displayed: 1
-      snapOffset: {x: -141, y: 149}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
-      id: unity-grid-and-snap-toolbar
-      index: 1
-      layout: 1
-    - dockPosition: 1
-      containerId: overlay-toolbar__top
-      floating: 0
-      collapsed: 0
-      displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: unity-scene-view-toolbar
-      index: 0
-      layout: 1
-    - dockPosition: 1
-      containerId: overlay-toolbar__top
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
-      id: unity-search-toolbar
-      index: 1
-      layout: 1
-    - dockPosition: 0
-      containerId: overlay-container--left
-      floating: 0
-      collapsed: 0
-      displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: unity-transform-toolbar
-      index: 0
-      layout: 2
-    - dockPosition: 0
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 1
-      snapOffset: {x: 67.5, y: 86}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Orientation
-      index: 0
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Light Settings
-      index: 0
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Camera
-      index: 1
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Cloth Constraints
-      index: 2
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Cloth Collisions
-      index: 3
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Navmesh Display
-      index: 4
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Agent Display
-      index: 5
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Obstacle Display
-      index: 6
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Occlusion Culling
-      index: 7
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Physics Debugger
-      index: 8
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Scene Visibility
-      index: 9
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Particles
-      index: 10
-      layout: 4
-  m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
-  m_Gizmos: 1
-  m_OverrideSceneCullingMask: 6917529027641081856
-  m_SceneIsLit: 1
-  m_SceneLighting: 1
-  m_2DMode: 0
-  m_isRotationLocked: 0
-  m_PlayAudio: 0
-  m_AudioPlay: 0
-  m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
-    speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
-  m_RenderMode: 0
-  m_CameraMode:
-    drawMode: 0
-    name: Shaded
-    section: Shading Mode
-  m_ValidateTrueMetals: 0
-  m_DoValidateTrueMetals: 0
-  m_ExposureSliderValue: 0
-  m_SceneViewState:
-    m_AlwaysRefresh: 0
-    showFog: 1
-    showSkybox: 1
-    showFlares: 1
-    showImageEffects: 1
-    showParticleSystems: 1
-    showVisualEffectGraphs: 1
-    m_FxEnabled: 1
-  m_Grid:
-    xGrid:
-      m_Fade:
-        m_Target: 0
-        speed: 2
-        m_Value: 0
-      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
-      m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
-    yGrid:
-      m_Fade:
-        m_Target: 1
-        speed: 2
-        m_Value: 1
-      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
-      m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 1, y: 1}
-    zGrid:
-      m_Fade:
-        m_Target: 0
-        speed: 2
-        m_Value: 0
-      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
-      m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
-    m_ShowGrid: 1
-    m_GridAxis: 1
-    m_gridOpacity: 0.5
-  m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
-    speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
-  m_Size:
-    m_Target: 10
-    speed: 2
-    m_Value: 10
-  m_Ortho:
-    m_Target: 0
-    speed: 2
-    m_Value: 0
-  m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
-    m_SpeedMin: 0.001
-    m_SpeedMax: 2
-    m_EasingEnabled: 1
-    m_EasingDuration: 0.4
-    m_AccelerationEnabled: 1
-    m_FieldOfViewHorizontalOrVertical: 60
-    m_NearClip: 0.03
-    m_FarClip: 10000
-    m_DynamicClip: 1
-    m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
-  m_LastSceneViewOrtho: 0
-  m_ReplacementShader: {fileID: 0}
-  m_ReplacementString: 
-  m_SceneVisActive: 1
-  m_LastLockedObject: {fileID: 0}
-  m_ViewIsLockedToObject: 0
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 507
-    y: 94
-    width: 1532
-    height: 790
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1532, y: 769}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 0
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -383
-    m_HBaseRangeMax: 383
-    m_VBaseRangeMin: -192.25
-    m_VBaseRangeMax: 192.25
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 1532
-      height: 769
-    m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 766, y: 384.5}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -383
-      y: -192.25
-      width: 766
-      height: 384.5
-    m_MinimalGUI: 1
-  m_defaultScale: 2
-  m_LastWindowPixelSize: {x: 3064, y: 1580}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
---- !u!114 &19
+  m_DirectoriesAreaWidth: 216
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1784,10 +679,965 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 555
-    width: 730.5
-    height: 304
+    y: 391
+    width: 657
+    height: 468
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 810
+    y: 83
+    width: 629
+    height: 776
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_Spl:
+    ID: 7014
+    splitterInitialOffset: 546
+    currentActiveSplitter: -1
+    realSizes:
+    - 474.5
+    - 231.5
+    relativeSizes:
+    - 0.6720963
+    - 0.3279037
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 706
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 1
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 0}
+    m_NewResultList: []
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories: []
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 21}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[TDD Avatar Health][suite]'
+      name: TDD Avatar Health
+      fullName: TDD Avatar Health
+      resultStatus: 1
+      duration: 0.3691314
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1041
+      uniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
+      name: EditMode.dll
+      fullName: /Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll
+      resultStatus: 1
+      duration: 0.1747199
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[TDD Avatar Health][suite]'
+    - id: 1001
+      uniqueId: EditMode.dll/[EditMode][HealthTest][suite]
+      name: HealthTest
+      fullName: HealthTest
+      resultStatus: 1
+      duration: 0.0011033
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1041
+      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1002
+      uniqueId: EditMode.dll/[EditMode][HealthTest+Constructor][suite]
+      name: HealthTest+Constructor
+      fullName: HealthTest+Constructor
+      resultStatus: 1
+      duration: 0.0722644
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1041
+      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1005
+      uniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.CurrentPoints_HasStartingValue][suite]
+      name: CurrentPoints_HasStartingValue
+      fullName: HealthTest+Constructor.CurrentPoints_HasStartingValue
+      resultStatus: 1
+      duration: 0.028138
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1002
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Constructor][suite]
+    - id: 1004
+      uniqueId: EditMode.dll/HealthTest+Constructor/CurrentPoints_HasStartingValue/[EditMode][HealthTest+Constructor.CurrentPoints_HasStartingValue(3)]
+      name: CurrentPoints_HasStartingValue(3)
+      fullName: HealthTest+Constructor.CurrentPoints_HasStartingValue(3)
+      resultStatus: 1
+      duration: 0.0229517
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.CurrentPoints_HasStartingValue][suite]
+    - id: 1004
+      uniqueId: EditMode.dll/HealthTest+Constructor/CurrentPoints_HasStartingValue/[EditMode][HealthTest+Constructor.CurrentPoints_HasStartingValue(1)]
+      name: CurrentPoints_HasStartingValue(1)
+      fullName: HealthTest+Constructor.CurrentPoints_HasStartingValue(1)
+      resultStatus: 1
+      duration: 0.0001899
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.CurrentPoints_HasStartingValue][suite]
+    - id: 1008
+      uniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.FullPoints_HasStartingValue][suite]
+      name: FullPoints_HasStartingValue
+      fullName: HealthTest+Constructor.FullPoints_HasStartingValue
+      resultStatus: 1
+      duration: 0.0257074
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1002
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Constructor][suite]
+    - id: 1007
+      uniqueId: EditMode.dll/HealthTest+Constructor/FullPoints_HasStartingValue/[EditMode][HealthTest+Constructor.FullPoints_HasStartingValue(3)]
+      name: FullPoints_HasStartingValue(3)
+      fullName: HealthTest+Constructor.FullPoints_HasStartingValue(3)
+      resultStatus: 1
+      duration: 0.0003609
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.FullPoints_HasStartingValue][suite]
+    - id: 1007
+      uniqueId: EditMode.dll/HealthTest+Constructor/FullPoints_HasStartingValue/[EditMode][HealthTest+Constructor.FullPoints_HasStartingValue(1)]
+      name: FullPoints_HasStartingValue(1)
+      fullName: HealthTest+Constructor.FullPoints_HasStartingValue(1)
+      resultStatus: 1
+      duration: 0.0000976
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.FullPoints_HasStartingValue][suite]
+    - id: 1012
+      uniqueId: EditMode.dll/HealthTest+Constructor/[EditMode][HealthTest+Constructor.IsDead_IsFalse]
+      name: IsDead_IsFalse
+      fullName: HealthTest+Constructor.IsDead_IsFalse
+      resultStatus: 1
+      duration: 0.0006012
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1002
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Constructor][suite]
+    - id: 1030
+      uniqueId: EditMode.dll/[EditMode][HealthTest+IncreaseByUnit][suite]
+      name: HealthTest+IncreaseByUnit
+      fullName: HealthTest+IncreaseByUnit
+      resultStatus: 1
+      duration: 0.0148977
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1041
+      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1030
+      uniqueId: EditMode.dll/HealthTest+IncreaseByUnit/[EditMode][HealthTest+IncreaseByUnit.CurrentPoints_Increase]
+      name: CurrentPoints_Increase
+      fullName: HealthTest+IncreaseByUnit.CurrentPoints_Increase
+      resultStatus: 1
+      duration: 0.0004531
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IncreaseByUnit][suite]
+    - id: 1031
+      uniqueId: EditMode.dll/HealthTest+IncreaseByUnit/[EditMode][HealthTest+IncreaseByUnit.FullPoints_Increase]
+      name: FullPoints_Increase
+      fullName: HealthTest+IncreaseByUnit.FullPoints_Increase
+      resultStatus: 1
+      duration: 0.0002142
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IncreaseByUnit][suite]
+    - id: 1037
+      uniqueId: EditMode.dll/HealthTest+IncreaseByUnit/[EditMode][HealthTest+IncreaseByUnit.ThrowsError_WhenMaxUnitsReached]
+      name: ThrowsError_WhenMaxUnitsReached
+      fullName: HealthTest+IncreaseByUnit.ThrowsError_WhenMaxUnitsReached
+      resultStatus: 1
+      duration: 0.0087244
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IncreaseByUnit][suite]
+    - id: 1038
+      uniqueId: EditMode.dll/[EditMode][HealthTest+IsMaxUnitsReached][suite]
+      name: HealthTest+IsMaxUnitsReached
+      fullName: HealthTest+IsMaxUnitsReached
+      resultStatus: 1
+      duration: 0.0073301
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1041
+      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1034
+      uniqueId: EditMode.dll/HealthTest+IsMaxUnitsReached/[EditMode][HealthTest+IsMaxUnitsReached.ReturnsFalse_WhenStartingUnitsNotAtMax]
+      name: ReturnsFalse_WhenStartingUnitsNotAtMax
+      fullName: HealthTest+IsMaxUnitsReached.ReturnsFalse_WhenStartingUnitsNotAtMax
+      resultStatus: 1
+      duration: 0.0005335
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IsMaxUnitsReached][suite]
+    - id: 1033
+      uniqueId: EditMode.dll/HealthTest+IsMaxUnitsReached/[EditMode][HealthTest+IsMaxUnitsReached.ReturnsTrue_WhenStartingUnitsAtMax]
+      name: ReturnsTrue_WhenStartingUnitsAtMax
+      fullName: HealthTest+IsMaxUnitsReached.ReturnsTrue_WhenStartingUnitsAtMax
+      resultStatus: 1
+      duration: 0.0003874
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+IsMaxUnitsReached][suite]
+    - id: 1024
+      uniqueId: EditMode.dll/[EditMode][HealthTest+Replenish][suite]
+      name: HealthTest+Replenish
+      fullName: HealthTest+Replenish
+      resultStatus: 1
+      duration: 0.0128396
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1041
+      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1025
+      uniqueId: EditMode.dll/HealthTest+Replenish/[EditMode][HealthTest+Replenish.CurrentPoints_WhenFullHealth]
+      name: CurrentPoints_WhenFullHealth
+      fullName: HealthTest+Replenish.CurrentPoints_WhenFullHealth
+      resultStatus: 1
+      duration: 0.000721
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Replenish][suite]
+    - id: 1026
+      uniqueId: EditMode.dll/HealthTest+Replenish/[EditMode][HealthTest+Replenish.CurrentPoints_WhenNotFullHealth]
+      name: CurrentPoints_WhenNotFullHealth
+      fullName: HealthTest+Replenish.CurrentPoints_WhenNotFullHealth
+      resultStatus: 1
+      duration: 0.0004198
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Replenish][suite]
+    - id: 1029
+      uniqueId: EditMode.dll/HealthTest+Replenish/[EditMode][HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid][suite]
+      name: ThrowsError_WhenReplenishPointsIsInvalid
+      fullName: HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid
+      resultStatus: 1
+      duration: 0.0063146
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+Replenish][suite]
+    - id: 1027
+      uniqueId: EditMode.dll/HealthTest+Replenish/ThrowsError_WhenReplenishPointsIsInvalid/[EditMode][HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid(0)]
+      name: ThrowsError_WhenReplenishPointsIsInvalid(0)
+      fullName: HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid(0)
+      resultStatus: 1
+      duration: 0.0010326
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: EditMode.dll/HealthTest+Replenish/[EditMode][HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid][suite]
+    - id: 1028
+      uniqueId: EditMode.dll/HealthTest+Replenish/ThrowsError_WhenReplenishPointsIsInvalid/[EditMode][HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid(-1)]
+      name: ThrowsError_WhenReplenishPointsIsInvalid(-1)
+      fullName: HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid(-1)
+      resultStatus: 1
+      duration: 0.0004581
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: EditMode.dll/HealthTest+Replenish/[EditMode][HealthTest+Replenish.ThrowsError_WhenReplenishPointsIsInvalid][suite]
+    - id: 1013
+      uniqueId: EditMode.dll/[EditMode][HealthTest+TakeDamage][suite]
+      name: HealthTest+TakeDamage
+      fullName: HealthTest+TakeDamage
+      resultStatus: 1
+      duration: 0.019192
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1041
+      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1014
+      uniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_Decrease]
+      name: CurrentPoints_Decrease
+      fullName: HealthTest+TakeDamage.CurrentPoints_Decrease
+      resultStatus: 1
+      duration: 0.0003374
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+TakeDamage][suite]
+    - id: 1017
+      uniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints][suite]
+      name: CurrentPoints_WhenStartingUnits_ThenDamagePoints
+      fullName: HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints
+      resultStatus: 1
+      duration: 0.0080537
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+TakeDamage][suite]
+    - id: 1013
+      uniqueId: EditMode.dll/HealthTest+TakeDamage/CurrentPoints_WhenStartingUnits_ThenDamagePoints/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints(1,1,4)]
+      name: CurrentPoints_WhenStartingUnits_ThenDamagePoints(1,1,4)
+      fullName: HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints(1,1,4)
+      resultStatus: 1
+      duration: 0.0005296
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints][suite]
+    - id: 1014
+      uniqueId: EditMode.dll/HealthTest+TakeDamage/CurrentPoints_WhenStartingUnits_ThenDamagePoints/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints(1,1,5)]
+      name: CurrentPoints_WhenStartingUnits_ThenDamagePoints(1,1,5)
+      fullName: HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints(1,1,5)
+      resultStatus: 1
+      duration: 0.0001069
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints][suite]
+    - id: 1015
+      uniqueId: EditMode.dll/HealthTest+TakeDamage/CurrentPoints_WhenStartingUnits_ThenDamagePoints/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints(1,1,24)]
+      name: CurrentPoints_WhenStartingUnits_ThenDamagePoints(1,1,24)
+      fullName: HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints(1,1,24)
+      resultStatus: 1
+      duration: 0.0001071
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints][suite]
+    - id: 1016
+      uniqueId: EditMode.dll/HealthTest+TakeDamage/CurrentPoints_WhenStartingUnits_ThenDamagePoints/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints(-21,1,25)]
+      name: CurrentPoints_WhenStartingUnits_ThenDamagePoints(-21,1,25)
+      fullName: HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints(-21,1,25)
+      resultStatus: 1
+      duration: 0.0001002
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.CurrentPoints_WhenStartingUnits_ThenDamagePoints][suite]
+    - id: 1023
+      uniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.IsDead_AfterTwoInvocations]
+      name: IsDead_AfterTwoInvocations
+      fullName: HealthTest+TakeDamage.IsDead_AfterTwoInvocations
+      resultStatus: 1
+      duration: 0.0002448
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+TakeDamage][suite]
+    - id: 1022
+      uniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid][suite]
+      name: ThrowsError_WhenDamagePointsIsInvalid
+      fullName: HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid
+      resultStatus: 1
+      duration: 0.0051544
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1013
+      parentUniqueId: EditMode.dll/[EditMode][HealthTest+TakeDamage][suite]
+    - id: 1020
+      uniqueId: EditMode.dll/HealthTest+TakeDamage/ThrowsError_WhenDamagePointsIsInvalid/[EditMode][HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid(0)]
+      name: ThrowsError_WhenDamagePointsIsInvalid(0)
+      fullName: HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid(0)
+      resultStatus: 1
+      duration: 0.0004415
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid][suite]
+    - id: 1021
+      uniqueId: EditMode.dll/HealthTest+TakeDamage/ThrowsError_WhenDamagePointsIsInvalid/[EditMode][HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid(-1)]
+      name: ThrowsError_WhenDamagePointsIsInvalid(-1)
+      fullName: HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid(-1)
+      resultStatus: 1
+      duration: 0.0001278
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: EditMode.dll/HealthTest+TakeDamage/[EditMode][HealthTest+TakeDamage.ThrowsError_WhenDamagePointsIsInvalid][suite]
+    - id: 1002
+      uniqueId: EditMode.dll/[EditMode][ValidationTest][suite]
+      name: ValidationTest
+      fullName: ValidationTest
+      resultStatus: 1
+      duration: 0.0000606
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1042
+      uniqueId: EditMode.dll/[EditMode][ValidationTest+Validate][suite]
+      name: ValidationTest+Validate
+      fullName: ValidationTest+Validate
+      resultStatus: 1
+      duration: 0.0372473
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: '[EditMode][/Users/admin/code/tdd-avatar-health-in-unity/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1055
+      uniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Fails_WhenValueHigher][suite]
+      name: Fails_WhenValueHigher
+      fullName: ValidationTest+Validate.Fails_WhenValueHigher
+      resultStatus: 1
+      duration: 0.0087009
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1042
+      parentUniqueId: EditMode.dll/[EditMode][ValidationTest+Validate][suite]
+    - id: 1053
+      uniqueId: EditMode.dll/ValidationTest+Validate/Fails_WhenValueHigher/[EditMode][ValidationTest+Validate.Fails_WhenValueHigher(0,int.MinValue,-1)]
+      name: Fails_WhenValueHigher(0,int.MinValue,-1)
+      fullName: ValidationTest+Validate.Fails_WhenValueHigher(0,int.MinValue,-1)
+      resultStatus: 1
+      duration: 0.000422
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1055
+      parentUniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Fails_WhenValueHigher][suite]
+    - id: 1047
+      uniqueId: EditMode.dll/ValidationTest+Validate/Fails_WhenValueHigher/[EditMode][ValidationTest+Validate.Fails_WhenValueHigher(1,int.MinValue,0)]
+      name: Fails_WhenValueHigher(1,int.MinValue,0)
+      fullName: ValidationTest+Validate.Fails_WhenValueHigher(1,int.MinValue,0)
+      resultStatus: 1
+      duration: 0.000172
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1048
+      parentUniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Fails_WhenValueHigher][suite]
+    - id: 1052
+      uniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Fails_WhenValueLower][suite]
+      name: Fails_WhenValueLower
+      fullName: ValidationTest+Validate.Fails_WhenValueLower
+      resultStatus: 1
+      duration: 0.0156341
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1042
+      parentUniqueId: EditMode.dll/[EditMode][ValidationTest+Validate][suite]
+    - id: 1043
+      uniqueId: EditMode.dll/ValidationTest+Validate/Fails_WhenValueLower/[EditMode][ValidationTest+Validate.Fails_WhenValueLower(0,1)]
+      name: Fails_WhenValueLower(0,1)
+      fullName: ValidationTest+Validate.Fails_WhenValueLower(0,1)
+      resultStatus: 1
+      duration: 0.0005263
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Fails_WhenValueLower][suite]
+    - id: 1044
+      uniqueId: EditMode.dll/ValidationTest+Validate/Fails_WhenValueLower/[EditMode][ValidationTest+Validate.Fails_WhenValueLower(-1,0)]
+      name: Fails_WhenValueLower(-1,0)
+      fullName: ValidationTest+Validate.Fails_WhenValueLower(-1,0)
+      resultStatus: 1
+      duration: 0.0001344
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Fails_WhenValueLower][suite]
+    - id: 1049
+      uniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Passes][suite]
+      name: Passes
+      fullName: ValidationTest+Validate.Passes
+      resultStatus: 1
+      duration: 0.0061909
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1042
+      parentUniqueId: EditMode.dll/[EditMode][ValidationTest+Validate][suite]
+    - id: 1036
+      uniqueId: EditMode.dll/ValidationTest+Validate/Passes/[EditMode][ValidationTest+Validate.Passes(12,1)]
+      name: Passes(12,1)
+      fullName: ValidationTest+Validate.Passes(12,1)
+      resultStatus: 1
+      duration: 0.0007605
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Passes][suite]
+    - id: 1037
+      uniqueId: EditMode.dll/ValidationTest+Validate/Passes/[EditMode][ValidationTest+Validate.Passes(1,1)]
+      name: Passes(1,1)
+      fullName: ValidationTest+Validate.Passes(1,1)
+      resultStatus: 1
+      duration: 0.0000944
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Passes][suite]
+    - id: 1038
+      uniqueId: EditMode.dll/ValidationTest+Validate/Passes/[EditMode][ValidationTest+Validate.Passes(4,2)]
+      name: Passes(4,2)
+      fullName: ValidationTest+Validate.Passes(4,2)
+      resultStatus: 1
+      duration: 0.0000856
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Passes][suite]
+    - id: 1039
+      uniqueId: EditMode.dll/ValidationTest+Validate/Passes/[EditMode][ValidationTest+Validate.Passes(2,2)]
+      name: Passes(2,2)
+      fullName: ValidationTest+Validate.Passes(2,2)
+      resultStatus: 1
+      duration: 0.0000787
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1042
+      parentUniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Passes][suite]
+    - id: 1047
+      uniqueId: EditMode.dll/ValidationTest+Validate/Passes/[EditMode][ValidationTest+Validate.Passes(-20,int.MinValue,-1)]
+      name: Passes(-20,int.MinValue,-1)
+      fullName: ValidationTest+Validate.Passes(-20,int.MinValue,-1)
+      resultStatus: 1
+      duration: 0.0000779
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Passes][suite]
+    - id: 1048
+      uniqueId: EditMode.dll/ValidationTest+Validate/Passes/[EditMode][ValidationTest+Validate.Passes(-1,int.MinValue,-1)]
+      name: Passes(-1,int.MinValue,-1)
+      fullName: ValidationTest+Validate.Passes(-1,int.MinValue,-1)
+      resultStatus: 1
+      duration: 0.0001064
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: EditMode.dll/ValidationTest+Validate/[EditMode][ValidationTest+Validate.Passes][suite]
+    m_ResultText: Passes (0.006s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 97057fbf
+      m_LastClickedID: -1082194537
+      m_ExpandedIDs: 3e259c8396fab88d0c3cf9904477c096c4868db9d6da3fbcf46d3ebf97057fbf9dbbacceeaa5490b6f343d1b803ba41cb3ea9e21bea56339999a4a3ed19c8f5300ffb37dffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized

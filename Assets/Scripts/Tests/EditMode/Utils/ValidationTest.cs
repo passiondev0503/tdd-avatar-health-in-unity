@@ -6,13 +6,13 @@ public class ValidationTest
 {
 	public class Validate
 	{
-		[TestCase(12, 1, Int32.MaxValue)]
-		[TestCase(1, 1, Int32.MaxValue)]
-		[TestCase(4, 2, Int32.MaxValue)]
-		[TestCase(2, 2, Int32.MaxValue)]
+		[TestCase(12, 1)]
+		[TestCase(1, 1)]
+		[TestCase(4, 2)]
+		[TestCase(2, 2)]
 		[TestCase(-20, Int32.MinValue, -1)]
 		[TestCase(-1, Int32.MinValue, -1)]
-		public void Passes(int v, int lowestValidV, int highestValidV)
+		public void Passes(int v, int lowestValidV, int highestValidV = Int32.MaxValue)
 		{
 			(bool, int, string) ret = Validation.Validate(v, lowestValidV, highestValidV);
 			Assert.That(ret.Item1, Is.True);
@@ -20,18 +20,18 @@ public class ValidationTest
 			Assert.That(ret.Item3, Is.EqualTo(""));
 		}
 
-		[TestCase(0, 1, Int32.MaxValue)]
-		[TestCase(1, 2, Int32.MaxValue)]
-		public void Fails_WhenValueLower(int v, int lowestValidV, int highestValidV)
+		[TestCase(0, 1)]
+		[TestCase(-1, 0)]
+		public void Fails_WhenValueLower(int v, int lowestValidV)
 		{
-			(bool, int, string) ret = Validation.Validate(v, lowestValidV, highestValidV);
+			(bool, int, string) ret = Validation.Validate(v, lowestValidV, Int32.MaxValue);
 			Assert.That(ret.Item1, Is.False);
 			Assert.That(ret.Item2, Is.EqualTo(lowestValidV));
 			Assert.That(ret.Item3, Does.Match("invalid").IgnoreCase);
 		}
 
 		[TestCase(0, Int32.MinValue, -1)]
-		[TestCase(1, Int32.MinValue, -1)]
+		[TestCase(1, Int32.MinValue, 0)]
 		public void Fails_WhenValueHigher(int v, int lowestValidV, int highestValidV)
 		{
 			(bool, int, string) ret = Validation.Validate(v, lowestValidV, highestValidV);

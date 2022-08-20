@@ -1,29 +1,27 @@
 using UnityEngine;
-using UnityEditor;
 using System;
 
 [CreateAssetMenu(fileName = "GameConfigInstance",
 menuName = "Avatar Health/Create GameConfig Instance",
 order = 1)]
 public class GameConfig : ScriptableObject {
-	public int StartingPoints = 12;
+	public int StartingUnits = 3;
 	public int PointsPerUnit = 4;
 	public int MaxUnits = 30;
-	public int MaxNegativePointsForInstantKillProtection = -20;
+	public int MaxNegativeUnitsForInstantKillProtection = -5;
 
 	private void OnValidate()
 	{
-		var v = Validation.Validate(StartingPoints, 1);
-		StartingPoints = ProcessValidation(v, nameof(StartingPoints));
+		var v = Validation.Validate(StartingUnits, 1);
+		StartingUnits = ProcessValidation(v, nameof(StartingUnits));
 
 		v = Validation.Validate(PointsPerUnit, 2);
 		PointsPerUnit = ProcessValidation(v, nameof(PointsPerUnit));
 
-		v = Validation.Validate(MaxNegativePointsForInstantKillProtection, Int32.MinValue, -1);
-		MaxNegativePointsForInstantKillProtection = ProcessValidation(v, nameof(MaxNegativePointsForInstantKillProtection));
+		v = Validation.Validate(MaxNegativeUnitsForInstantKillProtection, Int32.MinValue, -1);
+		MaxNegativeUnitsForInstantKillProtection = ProcessValidation(v, nameof(MaxNegativeUnitsForInstantKillProtection));
 
-		double lowestMaxUnits = Math.Ceiling((double)StartingPoints / (double)PointsPerUnit);
-		v = Validation.Validate(MaxUnits, (int)lowestMaxUnits);
+		v = Validation.Validate(MaxUnits, StartingUnits);
 		MaxUnits = ProcessValidation(v, nameof(MaxUnits));
 	}
 

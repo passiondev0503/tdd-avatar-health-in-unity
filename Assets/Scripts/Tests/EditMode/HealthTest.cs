@@ -6,38 +6,44 @@ using UnityEngine;
 public class HealthTest
 {
 
-	public static Health MakeHealth(int startingPoints)
+	public static Health MakeHealth(int startingUnits)
 	{
-			GameConfig config = ScriptableObject.CreateInstance<GameConfig>();
-			config.StartingPoints = startingPoints;
-			config.PointsPerUnit = 4;
-			config.MaxUnits = 30;
+			var config = MakeConfig(startingUnits);
 			var health = new Health(config);
 			return health;
+	}
+
+	public static GameConfig MakeConfig(int startingUnits = 3)
+	{
+			GameConfig config = ScriptableObject.CreateInstance<GameConfig>();
+			config.StartingUnits = startingUnits;
+			config.PointsPerUnit = 4;
+			config.MaxUnits = 30;
+			return config;
 	}
 	
 	public class Constructor
 	{
-		[TestCase(12)]
+		[TestCase(3)]
 		[TestCase(1)]
-		public void CurrentPoints_HasStartingValue(int startingPoints)
+		public void CurrentPoints_HasStartingValue(int startingUnits)
 		{
-			var health = MakeHealth(startingPoints);
-			Assert.That(health.CurrentPoints, Is.EqualTo(startingPoints));
+			var health = MakeHealth(startingUnits);
+			Assert.That(health.CurrentPoints, Is.EqualTo(startingUnits * health.PointsPerUnit));
 		}
 
-		[TestCase(12)]
+		[TestCase(3)]
 		[TestCase(1)]
-		public void FullPoints_HasStartingValue(int startingPoints)
+		public void FullPoints_HasStartingValue(int startingUnits)
 		{
-			var health = MakeHealth(startingPoints);
-			Assert.That(health.FullPoints, Is.EqualTo(startingPoints));
+			var health = MakeHealth(startingUnits);
+			Assert.That(health.FullPoints, Is.EqualTo(startingUnits * health.PointsPerUnit));
 		}
 
 		[Test]
 		public void IsDead_IsFalse()
 		{
-			var health = MakeHealth(12);
+			var health = MakeHealth(3);
 			Assert.That(health.IsDead, Is.False);
 		}
 	}
@@ -47,21 +53,21 @@ public class HealthTest
 		[Test]
 		public void CurrentPoints_Decrease()
 		{
-			var health = MakeHealth(12);
+			var health = MakeHealth(3);
 			health.TakeDamage(1);
 			Assert.That(health.CurrentPoints, Is.EqualTo(11));
 		}
 
-		[TestCase(1, 2, 2)]
-		[TestCase(1, 2, 3)]
-		[TestCase(1, 2, 22)]
-		[TestCase(-21, 2, 23)]
-		public void CurrentPoints_WhenStartingPoints_ThenDamagePoints(
+		[TestCase(1, 1, 4)]
+		[TestCase(1, 1, 5)]
+		[TestCase(1, 1, 24)]
+		[TestCase(-21, 1, 25)]
+		public void CurrentPoints_WhenStartingUnits_ThenDamagePoints(
 			int currentPoints,
-			int startingPoints,
+			int startingUnits,
 			int damagePoints)
 		{
-			var health = MakeHealth(startingPoints);
+			var health = MakeHealth(startingUnits);
 			health.TakeDamage(damagePoints);
 			Assert.That(health.CurrentPoints, Is.EqualTo(currentPoints));
 		}
@@ -70,7 +76,7 @@ public class HealthTest
 		[TestCase(-1)]
 		public void ThrowsError_WhenDamagePointsIsInvalid(int damagePoints)
 		{
-			var health = MakeHealth(12);
+			var health = MakeHealth(3);
 			var exception = Assert.Throws(Is.TypeOf<ArgumentOutOfRangeException>(), 
 				delegate
 				{
@@ -82,8 +88,8 @@ public class HealthTest
 		[Test]
 		public void IsDead_AfterTwoInvocations()
 		{
-			var health = MakeHealth(10);
-			health.TakeDamage(9);
+			var health = MakeHealth(3);
+			health.TakeDamage(11);
 			Assert.That(health.IsDead, Is.False);
 
 			health.TakeDamage(1);
@@ -96,7 +102,7 @@ public class HealthTest
 		[Test]
 		public void CurrentPoints_WhenFullHealth()
 		{
-			var health = MakeHealth(12);
+			var health = MakeHealth(3);
 			health.Replenish(1);
 			Assert.That(health.CurrentPoints, Is.EqualTo(12));
 		}
@@ -104,7 +110,7 @@ public class HealthTest
 		[Test]
 		public void CurrentPoints_WhenNotFullHealth()
 		{
-			var health = MakeHealth(12);
+			var health = MakeHealth(3);
 			health.TakeDamage(2);
 			health.Replenish(1);
 			Assert.That(health.CurrentPoints, Is.EqualTo(11));
@@ -114,7 +120,7 @@ public class HealthTest
 		[TestCase(-1)]
 		public void ThrowsError_WhenReplenishPointsIsInvalid(int replenishPoints)
 		{
-			var health = MakeHealth(12);
+			var health = MakeHealth(3);
 			var exception = Assert.Throws(Is.TypeOf<ArgumentOutOfRangeException>(), 
 				delegate
 				{
@@ -129,7 +135,7 @@ public class HealthTest
 		[Test]
 		public void FullPoints_Increase()
 		{
-			var health = MakeHealth(12);
+			var health = MakeHealth(3);
 			health.IncreaseByUnit();
 			Assert.That(health.FullPoints, Is.EqualTo(16));
 		}
@@ -137,30 +143,17 @@ public class HealthTest
 		[Test]
 		public void CurrentPoints_Increase()
 		{
-			var health = MakeHealth(12);
+			var health = MakeHealth(3);
 			health.IncreaseByUnit();
 			Assert.That(health.CurrentPoints, Is.EqualTo(16));
-		}
-
-		[TestCase(7, 4, 1)]
-		[TestCase(6, 4, 2)]
-		[TestCase(5, 4, 3)]
-		public void CurrentPoints_WhenStartingPoints_ThenDamagePoints(
-			int currentPoints,
-			int startingPoints,
-			int damagePoints)
-		{
-			var health = MakeHealth(startingPoints);
-			health.TakeDamage(damagePoints);
-			health.IncreaseByUnit();
-			Assert.That(health.CurrentPoints, Is.EqualTo(currentPoints));
 		}
 
 		[Test]
 		public void ThrowsError_WhenMaxUnitsReached()
 		{
-			int startingPointsAtMax = 120; // MaxUnits * PointsPerUnit (config vars set in MakeHealth method)
-			var health = MakeHealth(startingPointsAtMax);
+			var config = MakeConfig();
+			config.StartingUnits = config.MaxUnits;
+			var health = new Health(config);
 			var exception = Assert.Throws(Is.TypeOf<InvalidOperationException>(),
 				delegate
 				{
@@ -173,17 +166,20 @@ public class HealthTest
 	public class IsMaxUnitsReached
 	{
 		[Test]
-		public void ReturnsTrue()
+		public void ReturnsTrue_WhenStartingUnitsAtMax()
 		{
-			int startingPointsAtMax = 120; // MaxUnits * PointsPerUnit (config vars set in MakeHealth method)
-			var health = MakeHealth(startingPointsAtMax);
+			var config = MakeConfig();
+			config.StartingUnits = config.MaxUnits;
+			var health = new Health(config);
 			Assert.That(health.IsMaxUnitsReached, Is.True);
 		}
 
 		[Test]
-		public void ReturnsFalse()
+		public void ReturnsFalse_WhenStartingUnitsNotAtMax()
 		{
-			var health = MakeHealth(1);
+			var config = MakeConfig();
+			config.StartingUnits = config.MaxUnits - 1;
+			var health = new Health(config);
 			Assert.That(health.IsMaxUnitsReached, Is.False);
 		}
 	}

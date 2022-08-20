@@ -59,7 +59,3 @@ sysinfo.txt
 crashlytics-build.properties
 
 ## end of unity template
-
-.vsconfig
-.vscode/
-.DS_Store

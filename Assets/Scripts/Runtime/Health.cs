@@ -10,9 +10,9 @@ public class Health
 	{
 		get { return config.MaxUnits; }
 	}
-		public int MaxNegativePointsForInstantKillProtection
+		public int MaxNegativeUnitsForInstantKillProtection
 	{
-		get { return config.MaxNegativePointsForInstantKillProtection; }
+		get { return config.MaxNegativeUnitsForInstantKillProtection; }
 	}
 	public int CurrentPoints { get; private set; }
 	public int FullPoints { get; private set; }
@@ -24,7 +24,7 @@ public class Health
 	public Health(GameConfig gameConfig)
 	{
 		config = gameConfig;
-		FullPoints = CurrentPoints = config.StartingPoints;
+		FullPoints = CurrentPoints = config.StartingUnits * config.PointsPerUnit;
 	}
 
 	public void IncreaseByUnit()
@@ -36,7 +36,7 @@ public class Health
 		}
 
 		FullPoints += PointsPerUnit;
-		CurrentPoints += PointsPerUnit;
+		CurrentPoints = FullPoints;
 	}
 
 	public void TakeDamage(int damagePoints)
@@ -45,7 +45,7 @@ public class Health
 
 		if (CurrentPoints == FullPoints
 			&& damagePoints >= FullPoints
-			&& damagePoints <= FullPoints - MaxNegativePointsForInstantKillProtection)
+			&& damagePoints <= FullPoints - MaxNegativeUnitsForInstantKillProtection * PointsPerUnit)
 		{
 			CurrentPoints = 1;
 			return;
