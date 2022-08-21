@@ -1,5 +1,4 @@
 using UnityEngine;
-using System;
 
 [CreateAssetMenu(fileName = "GameConfigInstance",
 menuName = "Avatar Health/Create GameConfig Instance",
@@ -18,19 +17,19 @@ public class GameConfig : ScriptableObject {
 		v = Validation.Validate(PointsPerUnit, 2);
 		PointsPerUnit = ProcessValidation(v, nameof(PointsPerUnit));
 
-		v = Validation.Validate(MaxNegativeUnitsForInstantKillProtection, Int32.MinValue, -1);
+		v = Validation.Validate(MaxNegativeUnitsForInstantKillProtection, int.MinValue, -1);
 		MaxNegativeUnitsForInstantKillProtection = ProcessValidation(v, nameof(MaxNegativeUnitsForInstantKillProtection));
 
 		v = Validation.Validate(MaxUnits, StartingUnits);
 		MaxUnits = ProcessValidation(v, nameof(MaxUnits));
 	}
 
-	private int ProcessValidation((bool IsValid, int Value, string FailMessage) v, string fieldName)
+	private int ProcessValidation((bool IsValid, int Value, string FailMessage) validation, string fieldName)
 	{
-		if (!v.IsValid)
-			{
-				Debug.LogWarning(v.FailMessage + $", for '{fieldName}'. Will set value to {v.Value}.");
-			}
-			return v.Value;
+		if (!validation.IsValid)
+		{
+			Debug.LogWarning(validation.FailMessage + $", for '{fieldName}'. Will set value to {validation.Value}.");
+		}
+		return validation.Value;
 	}
 }

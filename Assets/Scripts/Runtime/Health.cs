@@ -2,24 +2,15 @@ using System;
 
 public class Health
 {
-	public int PointsPerUnit
-	{
-		get { return config.PointsPerUnit; }
-	}
-	public int MaxUnits
-	{
-		get { return config.MaxUnits; }
-	}
-		public int MaxNegativeUnitsForInstantKillProtection
-	{
-		get { return config.MaxNegativeUnitsForInstantKillProtection; }
-	}
+	public int PointsPerUnit => config.PointsPerUnit;
+	public int MaxUnits => config.MaxUnits;
+	public int MaxNegativeUnitsForInstantKillProtection => config.MaxNegativeUnitsForInstantKillProtection;
 	public int CurrentPoints { get; private set; }
 	public int FullPoints { get; private set; }
 	public bool IsMaxUnitsReached => FullPoints / PointsPerUnit == MaxUnits;
 	public bool IsDead => CurrentPoints < 1;
 	
-	private GameConfig config;
+	private readonly GameConfig config;
 
 	public Health(GameConfig gameConfig)
 	{

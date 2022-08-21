@@ -15,7 +15,7 @@ public class HealthTest
 
 	public static GameConfig MakeConfig(int startingUnits = 3)
 	{
-			GameConfig config = ScriptableObject.CreateInstance<GameConfig>();
+			var config = ScriptableObject.CreateInstance<GameConfig>();
 			config.StartingUnits = startingUnits;
 			config.PointsPerUnit = 4;
 			config.MaxUnits = 30;

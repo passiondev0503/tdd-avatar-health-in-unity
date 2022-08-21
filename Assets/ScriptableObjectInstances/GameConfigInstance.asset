@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 638a37bf9880d4f1da9e6450adf4175a, type: 3}
   m_Name: GameConfigInstance
   m_EditorClassIdentifier: 
-  StartingUnits: 4
+  StartingUnits: 3
   PointsPerUnit: 4
-  MaxUnits: 4
-  MaxNegativeUnitsForInstantKillProtection: -20
+  MaxUnits: 30
+  MaxNegativeUnitsForInstantKillProtection: -5
